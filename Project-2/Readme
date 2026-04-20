@@ -1,0 +1,22 @@
+The .NET CLI expects:
+    A project folder (.csproj)
+    Default file: Program.cs
+
+For YOU (C++ mindset)
+    Think like:
+    .csproj = like CMakeLists.txt
+    .cs files = like .cpp files
+
+Common .csproj naming conventions
+Match project folder name (BEST practice)
+    AddApp/
+    ├── AddApp.csproj
+    ├── main.cs
+
+    ✔ Most common
+    ✔ Clean & professional
+    ✔ Same idea as CMake project name
+
+For build and run the project
+    $dotnet build 
+    $dotnet run    
