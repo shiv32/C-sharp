@@ -1,0 +1,103 @@
+Setting up C# for console development on **Manjaro (Arch-based)** is actually very clean. 
+Follow this step-by-step
+
+---
+
+# 1. Install .NET SDK
+
+You need **.NET SDK**
+
+Official repo (recommended)
+
+sudo pacman -S dotnet-sdk
+
+---
+
+# 2. Verify installation
+
+dotnet --version
+
+You should see something like:
+8.0.x
+---
+
+# 3. Create a console project
+
+dotnet new console -n HelloApp
+cd HelloApp
+---
+
+# 4. Run your app
+
+dotnet run
+
+Output:
+
+Hello, World!
+
+---
+
+# 5. Project structure (important for you)
+
+HelloApp/
+ ├── Program.cs
+ ├── HelloApp.csproj
+
+You can fully control everything (like your C++ projects):
+
+* No GUI
+* Pure console
+* Clean structure
+
+---
+
+# 6. Edit code
+
+Open `Program.cs`:
+
+Console.WriteLine("C# on Manjaro");
+
+---
+
+# 7. Build manually (optional)
+
+dotnet build
+
+Run compiled binary:
+
+./bin/Debug/net8.0/HelloApp
+
+---
+
+# 8. Useful commands
+
+dotnet new console        # new project
+dotnet run                # run
+dotnet build              # compile
+dotnet clean              # clean build
+
+---
+
+# For YOU (C++ mindset)
+* C# console feels like **cleaner C++**
+* No manual memory management
+* Faster development for tools/dashboards
+
+---
+
+# Bonus (optional tools)
+
+You can also install:
+
+* **Visual Studio Code** + C# extension
+  or just use terminal (perfect for your style)
+
+---
+
+# Final truth
+
+✔ Manjaro + .NET = **perfect for console dev**
+✔ Same level of control as C++
+✔ Much faster iteration
+
+---
